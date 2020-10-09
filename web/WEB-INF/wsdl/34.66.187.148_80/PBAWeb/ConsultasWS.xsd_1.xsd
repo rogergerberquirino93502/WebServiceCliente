@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://servicios.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://servicios.com/">
+
+<xs:element name="agregar" type="tns:agregar" />
+
+<xs:element name="agregarResponse" type="tns:agregarResponse" />
+
+<xs:element name="lista" type="tns:lista" />
+
+<xs:element name="listaResponse" type="tns:listaResponse" />
+
+<xs:complexType name="lista">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="listaResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:productos" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="productos">
+<xs:sequence>
+<xs:element name="cantidad" type="xs:string" minOccurs="0" />
+<xs:element name="categoria" type="xs:string" minOccurs="0" />
+<xs:element name="id" type="xs:int" />
+<xs:element name="mayoreo" type="xs:string" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="oferta" type="xs:string" minOccurs="0" />
+<xs:element name="precio" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregar">
+<xs:sequence>
+<xs:element name="categoria" type="xs:string" minOccurs="0" />
+<xs:element name="nombre" type="xs:string" minOccurs="0" />
+<xs:element name="precio" type="xs:string" minOccurs="0" />
+<xs:element name="mayoreo" type="xs:string" minOccurs="0" />
+<xs:element name="oferta" type="xs:string" minOccurs="0" />
+<xs:element name="cantidad" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="agregarResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

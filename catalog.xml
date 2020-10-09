@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://34.66.187.148/PBAWeb/ConsultasWS?wsdl" uri="src/conf/xml-resources/web-service-references/ConsultasWS/wsdl/34.66.187.148/PBAWeb/ConsultasWS.wsdl"/>
+    <system systemId="http://34.66.187.148:80/PBAWeb/ConsultasWS?xsd=1" uri="src/conf/xml-resources/web-service-references/ConsultasWS/wsdl/34.66.187.148_80/PBAWeb/ConsultasWS.xsd_1.xsd"/>
+</catalog>
