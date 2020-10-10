@@ -46,10 +46,10 @@
                                 <td><%= p.getId()%></td>
                                 <td><%= p.getCategoria()%></td>
                                 <td><%= p.getNombre()%></td>
-                                <td><%= p.getPrecio()%></td>
-                                <td><%= p.getMayoreo()%></td>
-                                <td><%= p.getOferta()%></td>
-                                <td><%= p.getCantidad()%></td>
+                                <td>Q.<%= p.getPrecio()%></td>
+                                <td>Q.<%= p.getMayoreo()%></td>
+                                <td>Q.<%= p.getOferta()%></td>
+                                <td>Q.<%= p.getCantidad()%></td>
                                 
                                 <td>
                                   <!--  <a href="Controlador?accion=actual&id=<%= p.getId()%>" class="btn btn-warning">Modificar</a>
