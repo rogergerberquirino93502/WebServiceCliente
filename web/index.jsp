@@ -6,6 +6,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+        <script type="text/javascript" src="js/funcion.js"></script>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
         
@@ -18,7 +22,7 @@
                     <a  href="Controlador?accion=agregar" class="btn btn-primary">Nuevo Producto</a>
                 </div>
                 <div class="card-body">
-                    <table class="table table-hover">
+                    <table id="example" class="table table-hover">
                         <thead>
                             <tr>
                                 <th>ID</th>
@@ -48,8 +52,8 @@
                                 <td><%= p.getCantidad()%></td>
                                 
                                 <td>
-                                    <a href="Controlador?accion=actual&id=<%= p.getId()%>" class="btn btn-warning">Modificar</a>
-                                    <a href="Controlador?accion=eliminar&id=<%= p.getId()%>" class="btn btn-warning">Quitar</a>
+                                  <!--  <a href="Controlador?accion=actual&id=<%= p.getId()%>" class="btn btn-warning">Modificar</a>
+                                    <a href="Controlador?accion=eliminar&id=<%= p.getId()%>" class="btn btn-warning">Quitar</a>-->
                                 </td>
                             </tr>
                             <%}%>
