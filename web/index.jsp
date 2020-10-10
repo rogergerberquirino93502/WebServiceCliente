@@ -48,7 +48,8 @@
                                 <td><%= p.getCantidad()%></td>
                                 
                                 <td>
-                                    <a href="" class="btn btn-warning">Modificar</a>
+                                    <a href="Controlador?accion=actualizar&id=<%= p.getId()%>" class="btn btn-warning">Modificar</a>
+                                    <a href="" class="btn btn-warning">Quitar</a>
                                 </td>
                             </tr>
                             <%}%>

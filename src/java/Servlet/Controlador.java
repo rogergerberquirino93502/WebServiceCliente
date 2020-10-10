@@ -30,7 +30,7 @@ public class Controlador extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     String agregar = "agregar.jsp";
-    String modificar = "modificar.jsp";
+    String actualizar = "actualizar.jsp";
     String index = "index.jsp";
     String acceso = "";
     ProductosSP ps = new ProductosSP();
@@ -50,6 +50,10 @@ public class Controlador extends HttpServlet {
             String cant=request.getParameter("cproducto");
             ps.agregar(cat, nom, pre, may, ofe, cant);
             acceso=index;
+        }
+        else if(accion.equals("actualizar")){
+            acceso = actualizar;
+            request.setAttribute("idpro", request.getParameter("id"));
         }
         RequestDispatcher  rd = request.getRequestDispatcher(acceso);
         rd.forward(request, response);

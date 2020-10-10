@@ -1,9 +1,3 @@
-<%-- 
-    Document   : agregar
-    Created on : 09-oct-2020, 2:51:36
-    Author     : Roger D. Quirino
---%>
-
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>

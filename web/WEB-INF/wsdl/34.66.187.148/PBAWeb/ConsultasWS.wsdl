@@ -10,6 +10,18 @@
 <message name="agregarResponse">
 <part name="parameters" element="tns:agregarResponse" />
 </message>
+<message name="listaid">
+<part name="parameters" element="tns:listaid" />
+</message>
+<message name="listaidResponse">
+<part name="parameters" element="tns:listaidResponse" />
+</message>
+<message name="actualizar">
+<part name="parameters" element="tns:actualizar" />
+</message>
+<message name="actualizarResponse">
+<part name="parameters" element="tns:actualizarResponse" />
+</message>
 <message name="lista">
 <part name="parameters" element="tns:lista" />
 </message>
@@ -21,6 +33,14 @@
 <input wsam:Action="http://servicios.com/ConsultasWS/agregarRequest" message="tns:agregar" />
 <output wsam:Action="http://servicios.com/ConsultasWS/agregarResponse" message="tns:agregarResponse" />
 </operation>
+<operation name="listaid">
+<input wsam:Action="http://servicios.com/ConsultasWS/listaidRequest" message="tns:listaid" />
+<output wsam:Action="http://servicios.com/ConsultasWS/listaidResponse" message="tns:listaidResponse" />
+</operation>
+<operation name="actualizar">
+<input wsam:Action="http://servicios.com/ConsultasWS/actualizarRequest" message="tns:actualizar" />
+<output wsam:Action="http://servicios.com/ConsultasWS/actualizarResponse" message="tns:actualizarResponse" />
+</operation>
 <operation name="lista">
 <input wsam:Action="http://servicios.com/ConsultasWS/listaRequest" message="tns:lista" />
 <output wsam:Action="http://servicios.com/ConsultasWS/listaResponse" message="tns:listaResponse" />
@@ -29,6 +49,24 @@
 <binding name="ConsultasWSPortBinding" type="tns:ConsultasWS">
 <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document" />
 <operation name="agregar">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+<operation name="listaid">
+<soap:operation soapAction="" />
+<input>
+<soap:body use="literal" />
+</input>
+<output>
+<soap:body use="literal" />
+</output>
+</operation>
+<operation name="actualizar">
 <soap:operation soapAction="" />
 <input>
 <soap:body use="literal" />
