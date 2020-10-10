@@ -24,24 +24,24 @@
                 <%
                 int id=Integer.parseInt((String)request.getAttribute("idpro"));
                 ProductosSP psp = new ProductosSP();
-                Productos p = psp.listaid(id);
+                Productos pp = psp.listaid(id);
                 %>
                 <div class="card-body">
                     <form action="Controlador">
                         <label>Id</label>
-                        <input type="text" name="idp" readonly="" class="form-control" value="<%= p.getId()%>">
+                        <input type="text" name="txtid" value="<%= pp.getId()%>" readonly="" class="form-control">
                         <label>Categoria</label>
-                        <input type="text" name="cat" class="form-control" value="<%= p.getCategoria()%>">
+                        <input type="text" name="cat" value="<%= pp.getCategoria()%>" class="form-control" >
                         <label>Nombre Producto</label>
-                        <input type="text" name="nom" class="form-control" value="<%= p.getNombre()%>">
+                        <input type="text" name="nom" class="form-control" value="<%= pp.getNombre()%>">
                         <label>Precio Venta</label>
-                        <input type="text" name="pventa" class="form-control" value="<%= p.getPrecio()%>">
+                        <input type="text" name="pventa" class="form-control" value="<%= pp.getPrecio()%>">
                         <label>Precio Mayoreo</label>
-                        <input type="text" name="pmayoreo" class="form-control" value="<%= p.getMayoreo()%>">
+                        <input type="text" name="pmayoreo" class="form-control" value="<%= pp.getMayoreo()%>">
                         <label>Precio oferta</label>
-                        <input type="text" name="poferta" class="form-control" value="<%= p.getOferta()%>">
+                        <input type="text" name="poferta" class="form-control" value="<%= pp.getOferta()%>">
                         <label>Cantidad Productos</label>
-                        <input type="text" name="cproducto" class="form-control" value="<%= p.getCantidad()%>">
+                        <input type="text" name="cproducto" class="form-control" value="<%= pp.getCantidad()%>">
                         <input type="submit" name="accion" value="Actualizar">
                         <a href="Controlador?accion=index">Anterior</a>
                     </form>

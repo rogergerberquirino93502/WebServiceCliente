@@ -30,7 +30,7 @@ public class Controlador extends HttpServlet {
      * @throws IOException if an I/O error occurs
      */
     String agregar = "agregar.jsp";
-    String actualizar = "actualizar.jsp";
+    String actualiza = "actualizar.jsp";
     String index = "index.jsp";
     String acceso = "";
     ProductosSP ps = new ProductosSP();
@@ -51,9 +51,26 @@ public class Controlador extends HttpServlet {
             ps.agregar(cat, nom, pre, may, ofe, cant);
             acceso=index;
         }
-        else if(accion.equals("actualizar")){
-            acceso = actualizar;
-            request.setAttribute("idpro", request.getParameter("id"));
+        else if(accion.equals("actual")){
+            acceso = actualiza;
+            request.setAttribute("idpro",request.getParameter("id"));
+        }
+        else if(accion.equals("Actualizar")){
+        String cate = request.getParameter("cat");
+        String nome = request.getParameter("nom");
+        String prec = request.getParameter("pventa");
+        String mayo = request.getParameter("pmayoreo");
+        String ofert = request.getParameter("poferta");
+        String canti = request.getParameter("cproducto");
+        int id= Integer.parseInt(request.getParameter("idprod"));
+        }
+        else if(accion.equals("eliminar")){
+            int id = Integer.parseInt(request.getParameter("id"));
+            ps.eliminar(id);
+            acceso=index;
+        }
+        else{
+        acceso = index;
         }
         RequestDispatcher  rd = request.getRequestDispatcher(acceso);
         rd.forward(request, response);

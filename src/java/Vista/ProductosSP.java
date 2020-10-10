@@ -38,7 +38,14 @@ public class ProductosSP {
         com.servicios.ConsultasWS port = service.getConsultasWSPort();
         return port.actualizar(id, categoria, nombre, precio, mayoreo, oferta, cantidad);
     }
-    
+
+    public Productos eliminar(int id) {
+        com.servicios.ConsultasWS_Service service = new com.servicios.ConsultasWS_Service();
+        com.servicios.ConsultasWS port = service.getConsultasWSPort();
+        return port.eliminar(id);
+    }
+
+   
     
     
 }

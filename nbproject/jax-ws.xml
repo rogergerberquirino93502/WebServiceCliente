@@ -3,8 +3,8 @@
   <services/>
   <clients>
     <client name="ConsultasWS">
-      <wsdl-url>http://34.66.187.148/PBAWeb/ConsultasWS?wsdl</wsdl-url>
-      <local-wsdl-file>34.66.187.148/PBAWeb/ConsultasWS.wsdl</local-wsdl-file>
+      <wsdl-url>http://34.67.148.217/ProyectoWebServiceDW/ConsultasWS?wsdl</wsdl-url>
+      <local-wsdl-file>34.67.148.217/ProyectoWebServiceDW/ConsultasWS.wsdl</local-wsdl-file>
       <package-name>com.servicios</package-name>
       <catalog-file>catalog.xml</catalog-file>
       <wsimport-options>
@@ -22,7 +22,7 @@
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>wsdlLocation</wsimport-option-name>
-          <wsimport-option-value>http://34.66.187.148/PBAWeb/ConsultasWS?wsdl</wsimport-option-value>
+          <wsimport-option-value>http://34.67.148.217/ProyectoWebServiceDW/ConsultasWS?wsdl</wsimport-option-value>
         </wsimport-option>
         <wsimport-option>
           <wsimport-option-name>xnocompile</wsimport-option-name>

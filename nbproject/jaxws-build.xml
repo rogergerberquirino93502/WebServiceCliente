@@ -28,8 +28,8 @@
     </target>
     <target name="wsimport-client-ConsultasWS" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/ConsultasWS"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ConsultasWS" destdir="${build.generated.dir}/jax-wsCache/ConsultasWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultasWS/wsdl/34.66.187.148/PBAWeb/ConsultasWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://34.66.187.148/PBAWeb/ConsultasWS?wsdl" xnocompile="true" xendorsed="true">
-            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultasWS/wsdl/34.66.187.148/PBAWeb/ConsultasWS.wsdl"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/ConsultasWS" destdir="${build.generated.dir}/jax-wsCache/ConsultasWS" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultasWS/wsdl/34.67.148.217/ProyectoWebServiceDW/ConsultasWS.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://34.67.148.217/ProyectoWebServiceDW/ConsultasWS?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/ConsultasWS/wsdl/34.67.148.217/ProyectoWebServiceDW/ConsultasWS.wsdl"/>
             <produces dir="${build.generated.dir}/jax-wsCache/ConsultasWS"/>
         </wsimport>
         <copy todir="${build.generated.sources.dir}/jax-ws">
